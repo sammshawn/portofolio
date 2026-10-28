@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Manesa Samm (Samm Shawn) — Web Developer building fast, responsive websites and Django web apps." />
-  <title>Manesa Samm — Web Developer</title>
+  <meta name="description" content="Manesa Samm (Samm Shawn) — I build Deriv trading tools and Django web apps. Analysis dashboards, signal generators, automation." />
+  <title>Manesa Samm — Deriv Tools & Web Developer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
   <div id="intro">
     <div class="intro-inner">
       <h1 class="intro-name">Manesa Samm</h1>
-      <p class="intro-role">Web Developer</p>
+      <p class="intro-role">Deriv Tools · Web Dev</p>
       <div class="intro-bar"></div>
     </div>
   </div>
@@ -27,9 +27,9 @@
         <a href="#" class="logo">MS<span>.</span></a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#tools">Deriv Tools</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -40,26 +40,28 @@
       <div class="hero-container">
 
         <div class="hero-text">
-          <span class="badge">● Available for work</span>
+          <span class="badge">⚡ Trusted by Deriv traders</span>
           <h1>
-            Hi, I'm <span class="highlight">Samm Shawn</span>.<br />
-            I build websites that work.
+            I build <span class="highlight">Deriv tools</span><br />
+            that give traders an edge.
           </h1>
           <p>
-            I'm a web developer focused on clean, fast, responsive websites.
-            From landing pages to full Django web apps — I turn ideas into code.
+            Analysis dashboards, signal generators, and automation for Deriv
+            and synthetic indices — plus full Django web apps when you need
+            something bigger.
           </p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View my work</a>
-            <a href="https://github.com/sammshawn" target="_blank" rel="noopener" class="btn btn-outline">
-              GitHub →
-            </a>
+            <a href="#tools" class="btn btn-primary">See my Deriv tools</a>
+            <a href="#contact" class="btn btn-outline">Request a custom tool →</a>
           </div>
+          <p class="hero-social-proof">
+            🎥 <strong>Featured on TikTok</strong> — 10k+ views on my Deriv analysis tool demo.
+          </p>
         </div>
 
         <div class="hero-image">
           <div class="image-ring">
-            <!-- ⚠️ Put your photo in images/profile.jpg (or .png and change extension) -->
+            <!-- ⚠️ Put your photo in images/profile.jpg -->
             <img src="images/profile.jpg" alt="Manesa Samm" />
           </div>
         </div>
@@ -71,72 +73,96 @@
     <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">About me</h2>
-        <p class="section-sub">A little about who I am and what I do.</p>
+        <p class="section-sub">Developer. Trader-tool builder. Problem solver.</p>
         <div class="about-grid">
           <p>
-            I'm Samm Shawn (Manesa Samm), a self-driven web developer with a
-            passion for building fast, accessible, and modern websites. I work
-            with HTML, CSS, JavaScript, Python and Django. I care about clean
-            code, good UX, and making things that actually help people.
+            I'm Manesa Samm (Samm Shawn) — a web developer who specializes in
+            building tools for Deriv traders. I combine Python, Django, and
+            real trading experience to create analysis dashboards, signal
+            generators, and automation scripts that traders actually use.
           </p>
           <p>
-            When I'm not coding, I'm learning something new, building side
-            projects like real-estate and restaurant platforms, or exploring
-            the web. Let's build something together.
+            When I'm not building Deriv tools, I ship full-stack Django
+            applications — real estate platforms, restaurant menu sites, and
+            custom business software. If it needs to work, I build it.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- ⭐ DERIV TOOLS SECTION (NEW — THE MAIN EVENT) ---- -->
+    <section id="tools" class="section alt-bg">
+      <div class="container">
+        <div class="tools-header">
+          <div>
+            <span class="section-tag">⭐ Featured</span>
+            <h2 class="section-title">Deriv Analysis Tool</h2>
+            <p class="section-sub">
+              The tool my TikTok audience keeps asking about.
+            </p>
+          </div>
+        </div>
+
+        <div class="tools-showcase">
+          <div class="tools-visual">
+            <div class="tool-preview">
+              <div class="tool-preview-top">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="tool-title">deriv-analysis-tool.py</span>
+              </div>
+              <div class="tool-preview-body">
+                <p><span class="code-line">$</span> Running pattern analysis…</p>
+                <p><span class="code-line">✓</span> Digit frequency loaded</p>
+                <p><span class="code-line">✓</span> Even/Odd streaks mapped</p>
+                <p><span class="code-line">✓</span> Over/Under probability ready</p>
+                <p><span class="code-line">→</span> Signal: <strong>UNDER 5</strong> — 74% conf.</p>
+                <p class="code-muted">// Repeat every 60s · Auto-log to CSV</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-info">
+            <h3>What it does</h3>
+            <ul class="feature-list">
+              <li>📊 <strong>Digit frequency analysis</strong> — see which digits hit most on Deriv synthetic indices</li>
+              <li>🎯 <strong>Pattern detection</strong> — streaks, reversals, and Even/Odd/Over-Under signals</li>
+              <li>🔔 <strong>Real-time alerts</strong> — get notified the moment your setup triggers</li>
+              <li>📁 <strong>Auto-logging</strong> — exports every signal to CSV for backtesting</li>
+              <li>⚙️ <strong>Customisable</strong> — tune thresholds to your strategy</li>
+            </ul>
+
+            <div class="tools-cta">
+              <a href="mailto:sammshawn1@gmail.com?subject=Deriv%20Tool%20Access" class="btn btn-primary">
+                Request access
+              </a>
+              <a href="https://github.com/sammshawn" target="_blank" rel="noopener" class="btn btn-outline">
+                View on GitHub
+              </a>
+            </div>
+            <p class="tools-note">
+              💬 DM me <strong>"TOOL"</strong> on TikTok to get the latest version.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ---- SKILLS ---- -->
-    <section id="skills" class="section alt-bg">
+    <section id="skills" class="section">
       <div class="container">
         <h2 class="section-title">Skills & Tools</h2>
         <p class="section-sub">The technologies I use every day.</p>
         <div class="skills-grid">
-          <div class="skill"><span>🌐</span> HTML5</div>
-          <div class="skill"><span>🎨</span> CSS3</div>
-          <div class="skill"><span>⚡</span> JavaScript</div>
           <div class="skill"><span>🐍</span> Python</div>
           <div class="skill"><span>🎯</span> Django</div>
+          <div class="skill"><span>📈</span> Deriv API</div>
+          <div class="skill"><span>⚡</span> JavaScript</div>
+          <div class="skill"><span>🌐</span> HTML5</div>
+          <div class="skill"><span>🎨</span> CSS3</div>
           <div class="skill"><span>🗄️</span> SQLite</div>
           <div class="skill"><span>🔧</span> Git & GitHub</div>
-          <div class="skill"><span>📱</span> Responsive Design</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ---- SERVICES ---- -->
-    <section id="services" class="section">
-      <div class="container">
-        <h2 class="section-title">What I offer</h2>
-        <p class="section-sub">Web development services I provide.</p>
-        <div class="services-grid">
-
-          <div class="card">
-            <div class="card-icon">🌐</div>
-            <h3>Frontend Development</h3>
-            <p>Modern, responsive interfaces with HTML, CSS and JavaScript. Pixel-perfect and accessible.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon">🐍</div>
-            <h3>Django Web Apps</h3>
-            <p>Full-stack Python + Django applications with authentication, databases, and admin dashboards.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon">📱</div>
-            <h3>Responsive Design</h3>
-            <p>Mobile-first layouts that look sharp on every screen — phone, tablet, and desktop.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon">⚡</div>
-            <h3>Performance & SEO</h3>
-            <p>Fast load times, Core Web Vitals, and SEO-friendly markup so people actually find you.</p>
-          </div>
-
         </div>
       </div>
     </section>
@@ -144,9 +170,17 @@
     <!-- ---- PROJECTS ---- -->
     <section id="projects" class="section alt-bg">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-sub">A few things I've built — all open source on GitHub.</p>
+        <h2 class="section-title">All projects</h2>
+        <p class="section-sub">Trading tools, web apps, and open-source work.</p>
         <div class="projects-grid">
+
+          <a href="https://github.com/sammshawn"
+             target="_blank" rel="noopener" class="project-card">
+            <div class="project-thumb">📈</div>
+            <h3>Deriv Analysis Tool</h3>
+            <p>Python tool that scans Deriv synthetic indices for signals and patterns.</p>
+            <span class="project-tag">⭐ Featured</span>
+          </a>
 
           <a href="https://github.com/sammshawn/sales-report-generator"
              target="_blank" rel="noopener" class="project-card">
@@ -173,13 +207,48 @@
       </div>
     </section>
 
+    <!-- ---- SERVICES ---- -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">What I build</h2>
+        <p class="section-sub">For traders and for businesses.</p>
+        <div class="services-grid">
+
+          <div class="card">
+            <div class="card-icon">📈</div>
+            <h3>Custom Deriv Tools</h3>
+            <p>Analysis dashboards, signal bots, and automation scripts tailored to your trading strategy.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🐍</div>
+            <h3>Django Web Apps</h3>
+            <p>Full-stack Python + Django apps with auth, databases, admin dashboards, and payments.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Websites & Landing Pages</h3>
+            <p>Fast, responsive websites that look sharp and convert visitors into customers.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">⚙️</div>
+            <h3>Automation Scripts</h3>
+            <p>Python scripts that handle reports, scraping, data cleanup, and repetitive work.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ---- CONTACT ---- -->
-    <section id="contact" class="section">
+    <section id="contact" class="section alt-bg">
       <div class="container">
         <div class="contact-wrap">
           <div class="contact-info">
-            <h2 class="section-title">Let's work together</h2>
-            <p class="section-sub">Got a project? I'd love to hear about it.</p>
+            <h2 class="section-title">Let's build something</h2>
+            <p class="section-sub">Custom Deriv tool, Django app, or website — I reply fast.</p>
             <ul class="contact-list">
               <li>
                 <span>📧</span>
@@ -191,10 +260,16 @@
                   github.com/sammshawn
                 </a>
               </li>
+              <li>
+                <span>🎥</span>
+                <span>TikTok — DM me <strong>"TOOL"</strong></span>
+              </li>
             </ul>
+            <div class="contact-highlight">
+              💡 Want a custom Deriv tool for your strategy? DM me <strong>"TOOL"</strong> on TikTok for a free quote.
+            </div>
           </div>
 
-          <!-- Working contact form via Formspree -->
           <form class="contact-form"
                 action="https://formspree.io/f/mljjbvpl"
                 method="POST">
@@ -205,6 +280,16 @@
             <label>
               Your email
               <input type="email" name="email" placeholder="jane@example.com" required />
+            </label>
+            <label>
+              What do you need?
+              <select name="project-type" required>
+                <option value="">-- Select --</option>
+                <option value="deriv-tool">Custom Deriv tool</option>
+                <option value="django-app">Django web app</option>
+                <option value="website">Website / landing page</option>
+                <option value="other">Something else</option>
+              </select>
             </label>
             <label>
               Message
@@ -218,7 +303,7 @@
 
     <!-- ---- FOOTER ---- -->
     <footer class="footer">
-      <p>© 2025 Manesa Samm (Samm Shawn) — Built with HTML, CSS & JavaScript.</p>
+      <p>© 2025 Manesa Samm (Samm Shawn) — Deriv tools & web development.</p>
       <p style="margin-top: 0.5rem;">
         <a href="https://github.com/sammshawn" target="_blank" rel="noopener" style="color: var(--accent);">
           github.com/sammshawn

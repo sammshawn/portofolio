@@ -5,7 +5,6 @@ window.addEventListener("load", () => {
   const intro = document.getElementById("intro");
   const site = document.getElementById("site");
 
-  // Intro CSS animations finish around ~2.5s
   const INTRO_DURATION = 2600;
 
   setTimeout(() => {
@@ -21,12 +20,13 @@ window.addEventListener("load", () => {
 });
 
 // ============================================
-//  SCROLL ANIMATIONS (fade sections in)
+//  SCROLL ANIMATIONS
 // ============================================
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".section, .card, .project-card, .skill");
+  const sections = document.querySelectorAll(
+    ".section, .card, .project-card, .skill, .tool-preview, .tools-info"
+  );
 
-  // Add the initial hidden class
   sections.forEach((el) => el.classList.add("reveal-init"));
 
   const observer = new IntersectionObserver(
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.12 }
   );
 
   sections.forEach((el) => observer.observe(el));
